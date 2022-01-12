@@ -1,0 +1,27 @@
+#board {
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.board-tile {
+    background: tomato;
+    flex: 1 0 33.3%;
+    height:auto;
+    outline: 2px solid #fff;
+
+}
+
+.board-tile:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
