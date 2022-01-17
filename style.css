@@ -17,11 +17,32 @@
     flex: 1 0 33.3%;
     height:auto;
     outline: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.board-tile.selected {
+    transition: 250ms;
+    color: #fff;
 }
 
 .board-tile:before {
     content:'';
     float:left;
     padding-top:100%;
+}
+
+.board-tile .icon {
+    font-size: 3em;
+}
+
+.board-tile.selected.winningCell {
+    color:bisque;
+    background: coral;
+    transition: 250ms;
+}
+
+#newgame {
+    margin-top: 10px;
 }

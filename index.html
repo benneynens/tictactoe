@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ben's Tic Tac Toe</title>
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
 <script src="tictactoe.js" defer></script>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
 <link rel="stylesheet" href="style.css">
-
+<!-- 
 <script id="boardTileTemplate" type="text/template">
     <div class="board-tile"></div>
-</script>
+</script> -->
 
 <body>
 
     <div class="container">
+        <p>Player 1 Name</p>
+        <input id="submit_p1_input" type="text">
+        <button id="submit_p1_button">Submit Player 1 Name</button>
+        <p>Player 2 Name</p>
+        <input id="submit_p2_input" type="text">
+        <button id="submit_p2_button">Submit Player 2 Name</button>
+
         <div id="board"></div>
+        <button id="newgame">New Game</button>
     </div>
     
 </body>
